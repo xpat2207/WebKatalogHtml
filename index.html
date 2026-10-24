@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Katering, nasi kotak, snack box, kue, dan jajanan rumahan dari Dapurnyakku. Temani setiap momen spesial dengan hidangan lezat.">
+  <meta name="theme-color" content="#fbf7f0">
+  <title>Dapurnyakku — Dari Dapur Kami, Untuk Momen Terbaikmu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Dapurnyakku, kembali ke beranda">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span>Dapur<span class="brand-accent">nyakku</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#katalog">Katalog Menu</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#kontak">Kontak</a>
+        <a class="button button-small button-primary nav-cta" href="#kontak">Pesan Sekarang <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-content container">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span> Hangat, rumahan, penuh rasa</span>
+          <h1>Lezatnya Masakan Rumahan, <em>Temani Setiap Momen.</em></h1>
+          <p>Temukan berbagai pilihan katering dan jajanan lezat untuk menemani keseharian, acara keluarga, rapat, dan momen spesialmu.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#katalog">Jelajahi Menu <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="#kontak">Pesan Sekarang <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true"><span>🍲</span><span>🍱</span><span>🍰</span></div>
+            <p><strong>Dibuat dengan cinta</strong><br>untuk setiap momen istimewa</p>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="Hidangan rumahan segar dengan sayuran dan lauk berwarna-warni" fetchpriority="high">
+          <div class="hero-sticker"><span>✳</span><strong>Rasa rumahan,<br>selalu dirindukan</strong></div>
+          <div class="hero-image-caption"><span class="caption-dot"></span> Selalu segar, selalu istimewa</div>
+        </div>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">✳</div>
+    </section>
+
+    <section class="category-section section-padding" aria-labelledby="category-title">
+      <div class="container">
+        <div class="section-heading section-heading-row reveal">
+          <div>
+            <span class="eyebrow">Pilih sesuai seleramu</span>
+            <h2 id="category-title">Ada yang pas untuk <em>setiap acara.</em></h2>
+          </div>
+          <p>Dari santapan harian sampai perayaan spesial, temukan favoritmu di sini.</p>
+        </div>
+        <div class="category-grid">
+          <button class="category-card category-featured reveal" type="button" data-category="Katering">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy">
+            <span class="category-overlay"></span><span class="category-info"><span>01 / Hidangan lengkap</span><strong>Katering</strong></span><span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="category-card reveal" type="button" data-category="Nasi Kotak">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy">
+            <span class="category-overlay"></span><span class="category-info"><span>02 / Praktis & lezat</span><strong>Nasi Kotak</strong></span><span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="category-card reveal" type="button" data-category="Snack Box">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy">
+            <span class="category-overlay"></span><span class="category-info"><span>03 / Teman berkumpul</span><strong>Snack Box</strong></span><span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="category-card reveal" type="button" data-category="Jajanan Ringan">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy">
+            <span class="category-overlay"></span><span class="category-info"><span>04 / Camilan favorit</span><strong>Jajanan Ringan</strong></span><span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="category-card reveal" type="button" data-category="Kue dan Camilan">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy">
+            <span class="category-overlay"></span><span class="category-info"><span>05 / Manisnya momen</span><strong>Kue & Camilan</strong></span><span class="category-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section section-padding" id="katalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section-heading section-heading-row reveal">
+          <div>
+            <span class="eyebrow">Dimasak sepenuh hati</span>
+            <h2 id="catalog-title">Menu pilihan <em>kami.</em></h2>
+          </div>
+          <p>Menu favorit yang siap menemani hari dan acara spesialmu.</p>
+        </div>
+        <div class="catalog-controls reveal">
+          <div class="filter-list" role="group" aria-label="Filter kategori menu">
+            <button class="filter-button active" type="button" data-filter="Semua">Semua Menu</button>
+            <button class="filter-button" type="button" data-filter="Katering">Katering</button>
+            <button class="filter-button" type="button" data-filter="Nasi Kotak">Nasi Kotak</button>
+            <button class="filter-button" type="button" data-filter="Snack Box">Snack Box</button>
+            <button class="filter-button" type="button" data-filter="Jajanan Ringan">Jajanan Ringan</button>
+            <button class="filter-button" type="button" data-filter="Kue dan Camilan">Kue & Camilan</button>
+          </div>
+          <label class="search-box">
+            <span class="sr-only">Cari menu</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="product-search" type="search" placeholder="Cari menu..." autocomplete="off">
+          </label>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>Menu tidak ditemukan. Coba kata kunci atau kategori lain.</p>
+        <div class="catalog-footnote"><span>✳</span> Harga dapat berubah sesuai jumlah pesanan dan kebutuhan acara.</div>
+      </div>
+    </section>
+
+    <section class="about-section section-padding" id="tentang" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-image-wrap reveal">
+          <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85" alt="Suasana dapur rumahan tempat makanan disiapkan dengan penuh perhatian" loading="lazy">
+          <div class="about-image-label"><span>Sejak dari dapur</span><strong>Dengan sepenuh hati ♡</strong></div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="eyebrow">Cerita Dapurnyakku</span>
+          <h2 id="about-title">Dari dapur kami,<br><em>untuk momen terbaikmu.</em></h2>
+          <p class="about-intro">Dapurnyakku hadir membawa cita rasa masakan rumahan ke setiap meja. Kami percaya hidangan yang lezat bisa membuat momen sederhana terasa lebih istimewa.</p>
+          <div class="benefit-list">
+            <div class="benefit-item"><span class="benefit-icon">✳</span><div><strong>Pilihan menu beragam</strong><p>Banyak pilihan rasa untuk dinikmati bersama.</p></div></div>
+            <div class="benefit-item"><span class="benefit-icon">♡</span><div><strong>Cocok untuk berbagai acara</strong><p>Teman pas untuk keluarga, rapat, dan perayaan.</p></div></div>
+            <div class="benefit-item"><span class="benefit-icon">↗</span><div><strong>Pemesanan praktis</strong><p>Hubungi kami langsung lewat WhatsApp.</p></div></div>
+          </div>
+          <a class="text-link" href="#kontak">Kenalan lebih dekat <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontak" aria-labelledby="contact-title">
+      <div class="container contact-inner reveal">
+        <div class="contact-flower" aria-hidden="true">✳</div>
+        <span class="eyebrow">Kami siap menyambut pesananmu</span>
+        <h2 id="contact-title">Momen spesialmu,<br><em>mulai dari sini.</em></h2>
+        <p>Ceritakan kebutuhan acaramu. Kami bantu pilihkan hidangan yang pas dan bikin semua orang senang.</p>
+        <a class="button button-light" id="contact-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Hubungi via WhatsApp <span aria-hidden="true">↗</span></a>
+        <span class="contact-small">Senang sekali bisa jadi bagian dari momenmu ♡</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#beranda">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span>Dapur<span class="brand-accent">nyakku</span></span>
+        </a>
+        <p>Dari Dapur Kami,<br>Untuk Momen Terbaikmu.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Jelajahi</h3>
+        <a href="#beranda">Beranda</a><a href="#katalog">Katalog Menu</a><a href="#tentang">Tentang Kami</a>
+      </div>
+      <div class="footer-column">
+        <h3>Hubungi kami</h3>
+        <a id="footer-whatsapp" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+      </div>
+      <div class="footer-note"><span>🍃</span><p>Terima kasih sudah memilih<br>masakan rumahan kami.</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year"></span> Dapurnyakku. Dibuat dengan sepenuh hati.</span><a href="#beranda">Kembali ke atas ↑</a></div>
+  </footer>
+</body>
+</html>
